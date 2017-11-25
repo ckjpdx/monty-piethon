@@ -2,7 +2,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 35px auto;
+  margin: 20px;
 }
 header * {
   display: inline;
@@ -12,13 +12,20 @@ nav {
   right: 10px;
 }
 div.title p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
   position: relative;
   bottom: 8px;
 }
-h1, h2, h3 {
+h1, h3 {
   font-family: 'MedievalSharp', cursive;
 }
 h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-family: 'Courgette', cursive;
   font-size: 3rem;
 }
 ul {
@@ -27,15 +34,42 @@ ul {
 li {
   padding-left: 5px;
 }
-section {
-  background-image: url("../img/pecan-pie.jpg");
+section, footer {
+  padding: 40px
 }
+section.pecan-pie {
+  background-image: url(../img/pecan-pie.jpg);
+}
+section.peach-pie {
+  background-image: url(../img/peach-pie.jpg);
+}
+footer {
+  background: black;
+  display: grid;
+  grid-template: 1fr / 200px 1fr;
+  grid-gap: 20px;
+}
+.white-text {
+  color: white;
+  text-shadow: 0px 5px 3px black, 1px 1px 1px black;
+}
+.black-text {
+  color: #222;
+  text-shadow: 0px 5px 3px white, 1px 1px 1px white;
+}
+img {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2rem;
   }
+  div.title p {
+    bottom: 4px;
+  }
   header {
-    margin: 10px auto;
+    margin: 10px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -44,6 +78,12 @@ section {
     text-align: center;
   }
   header {
+    display: block;
+  }
+  section {
+    padding: 10px;
+  }
+  footer {
     display: block;
   }
 }
