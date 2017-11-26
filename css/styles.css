@@ -60,30 +60,41 @@ footer {
 img {
   max-width: 100%;
 }
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
-  }
-  div.title p {
-    bottom: 4px;
-  }
+header i.fa.fa-bars {
+  position: absolute;
+    right: 20px;
+    font-size: 2em;
+    display: none;
+}
+@media screen and (max-width: 660px) {
   header {
     margin: 10px;
   }
-}
-@media screen and (max-width: 350px) {
+  footer {
+    display: block;
+  }
   div.title p {
     display: block;
     text-align: center;
+    margin: 0;
   }
-  header {
+  header i.fa.fa-bars {
+    display: block; 
+  }
+  nav {
+    display: none;
+    top: 52px;
+    background: white;
+  }
+  li {
     display: block;
+    margin: 10px;
+    padding: 3px;
+    background: #EEE;
   }
-  section {
-    padding: 10px;
-  }
-  footer {
-    display: block;
+}
+@media screen and (max-width: 420px) {
+  h1, h2 {
+    font-size: 2rem;
   }
 }
