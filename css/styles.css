@@ -26,6 +26,9 @@ section.order-here {
   padding: 20px;
   border-radius: 10px;
 }
+article {
+  max-width: 850px;
+}
 div.bg-img {
   padding: 10vw;
   background-size: cover;
@@ -84,6 +87,11 @@ footer img {
   width: 300px;
   max-height: 300px;
 }
+img.harper {
+  float: right;
+  max-width: 50%;
+  max-height: 560px;
+}
 /*font awesome*/
 header i.fa.fa-bars {
   position: absolute;
@@ -105,6 +113,10 @@ header i.fa.fa-bars {
   }
   header i.fa.fa-bars {
     display: block;
+  }
+  img.harper {
+    float: none;
+    max-width: 100%;
   }
   nav {
     display: none;
