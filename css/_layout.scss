@@ -8,25 +8,8 @@ header {
 header * {
   display: inline;
 }
-nav {
-  top: 52px;
-  background: white;
-}
-li {
-  display: block;
-  margin: 10px;
-  padding: 3px;
-  background: #EEE;
-  border-radius: 3px;
-}
-nav li:hover {
-  background: #ADA;
-}
-ul {
-  padding: 0;
-}
-li {
-  padding-left: 5px;
+div.title {
+  z-index: 1;
 }
 section {
   margin: 40px
@@ -42,18 +25,18 @@ article {
 div.bg-img {
   padding: 10vw;
   background-size: cover;
-  background-position: center;
 }
 div.bg-img.pie1 {
   background-image: url(../img/pie1.jpg);
+  background-position: 0% 17%;
 }
 div.bg-img.pie2 {
   background-image: url(../img/pie2.jpg);
+  background-position: 0 72%;
 }
 footer {
   display: block;
   padding: 40px;
-  background: black;
 }
 @media #{$tablet} {
   footer {
@@ -61,18 +44,9 @@ footer {
     grid-template: 1fr / 200px 1fr;
     grid-gap: 20px;
   }
-  nav {
-    position: absolute;
-    right: 10px;
-    top: 25px;
-  }
 }
 @media #{$desktop} {
   header {
     margin: 20px;
-  }
-  li {
-    display: inline;
-    margin: 0;
   }
 }
